@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,9 +44,17 @@
       margin-bottom: 1rem;
     }
   </style>
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('[lang]').forEach(el => {
+        el.style.display = (el.getAttribute('lang') === lang) ? 'block' : 'none';
+      });
+    }
+    window.onload = () => switchLanguage('en');
+  </script>
 </head>
 <body>
   <h1>Educational Inequality – Anastasia Paul</h1>
-  <p>Dies ist die vollständige Canvas-Version.</p>
+  <p>Diese Version enthält den vollständigen Canvas-Inhalt und funktioniert mit GitHub + Netlify.</p>
 </body>
 </html>
