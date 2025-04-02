@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,43 +20,41 @@
   </script>
 </head>
 <body>
+  <header style="background-color: #003366; padding: 1rem; color: white;">
+    <nav style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="font-size: 1.5rem; font-weight: bold;">Anastasia Paul</div>
+      <ul style="list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0;">
+        <li><a href="#hero" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="#resources" style="color: white; text-decoration: none;">Articles</a></li>
+        <li><a href="#podcast" style="color: white; text-decoration: none;">Podcast</a></li>
+        <li><a href="#projects" style="color: white; text-decoration: none;">Projects</a></li>
+        <li><a href="#involve" style="color: white; text-decoration: none;">Get Involved</a></li>
+      </ul>
+    </nav>
+  </header>
   <div style="text-align: right; margin-bottom: 1rem;">
     <button onclick="switchLanguage('en')">English</button>
     <button onclick="switchLanguage('de')">Deutsch</button>
   </div>
 
-  <!-- Hero Section -->
   <section id="hero" style="display: flex; gap: 2rem; align-items: flex-start;">
-    <img src="images/anastasia.jpg" alt="Anastasia Paul" style="width: 80px; border-radius: 50%;">
-    <div lang="en">
+    <img src="/images/anastasia.jpg" alt="Anastasia Paul" style="width: 80px; border-radius: 50%;">
+    <div>
       <h1>Educational Inequality – A Personal Mission</h1>
       <p>This isn’t just another website that simply informs you about the ongoing issue of educational inequality. This platform exists to prove that one voice, one that might seem small, insignificant, unheard, can, in fact, create an impact.</p>
       <p>My team and I are dedicated to ensuring that people, regardless of their socioeconomic status, nationality, or age, are aware of the pressing issue of educational inequality, an issue that, by now, should have been long resolved.</p>
       <p>When you meet someone for the first time, one of the most common questions is: Where do you come from? For me, this has never been an easy question to answer. My mother is from Ukraine, raised in a small village near the Russian border in Sumskaya Oblast, Ulyanovka. My father was born and raised in Eastern Germany. My brother and I were born in Vienna, attended the American International School, and today, I live in Andover, Massachusetts, while my brother resides in Shanghai, China.</p>
-      <p>I am a three-year junior at Phillips Academy Andover, but my interest in educational inequity began at a very young age.</p>
-      <p>My parents chased every single opportunity that came their way. They lived by the belief that "opportunities only knock once, but if opportunity doesn’t knock, build a door." They have given me everything, and I will forever be grateful for the opportunities I have been afforded. Yet, while giving me everything they possibly could, they also made sure I never forgot my privilege. They taught me never to take anything for granted and that just because I have access to opportunities that others must fight tirelessly for, I should not become complacent. Instead, it should drive me to work even harder to create meaningful change in a world that so desperately needs it.</p>
-      <p>This platform is not just about spreading awareness; it is about action. It is about showing students like myself that if you put your mind, energy, and soul into something, you can achieve greatness. Hard work and determination are your fuel, and knowledge is your privilege, but it is up to you how you choose to use that privilege.</p>
-      <p>Privilege is often perceived negatively, but at its core, it simply means an advantage, whether by birth, social position, effort, or circumstance. However, in my eyes the negative connotation of privilege, comes with privilege in certain necessities. The privilege of access to education, a quality education that can open doors and shape futures, should not be a privilege at all; it should be a right – in fact, it's a necessity for each and every person on this planet.</p>
-      <p>It is 2025. We can fly to the moon, we can access limitless information with a single click, we can travel and explore new frontiers. Yet, over 80% of children in low-income countries cannot read and understand a simple text by age 10, trapping them in a cycle of poverty and stripping them of the chance at higher education. As a result, 62% of the world’s eligible population is unable to access college, reinforcing global inequality and economic disparity.</p>
-      <p>This must change. And change starts with us.</p>
-      <p>My name is Anastasia Leandra Paul and my mission is to spotlight educational inequality and inspire conversations and actions to bridge the worldwide opportunity gap for students. Through thought-provoking podcasts, curated articles, and a growing community of passionate individuals, we aim to empower teenagers to become agents of change. Together, we can raise awareness, spark dialogue, and explore impactful ways to make education equitable for all.</p>
+      <div id="moreText" style="display:none;">
+        <p>I am a three-year junior at Phillips Academy Andover, but my interest in educational inequity began at a very young age.</p>
+        <p>My parents chased every single opportunity that came their way. They lived by the belief that "opportunities only knock once, but if opportunity doesn’t knock, build a door." They have given me everything, and I will forever be grateful for the opportunities I have been afforded. Yet, while giving me everything they possibly could, they also made sure I never forgot my privilege. They taught me never to take anything for granted and that just because I have access to opportunities that others must fight tirelessly for, I should not become complacent. Instead, it should drive me to work even harder to create meaningful change in a world that so desperately needs it.</p>
+        <p>This platform is not just about spreading awareness; it is about action. It is about showing students like myself that if you put your mind, energy, and soul into something, you can achieve greatness. Hard work and determination are your fuel, and knowledge is your privilege, but it is up to you how you choose to use that privilege.</p>
+        <p>Privilege is often perceived negatively, but at its core, it simply means an advantage, whether by birth, social position, effort, or circumstance. However, in my eyes the negative connotation of privilege, comes with privilege in certain necessities. The privilege of access to education, a quality education that can open doors and shape futures, should not be a privilege at all; it should be a right – in fact, it's a necessity for each and every person on this planet.</p>
+        <p>It is 2025. We can fly to the moon, we can access limitless information with a single click, we can travel and explore new frontiers. Yet, over 80% of children in low-income countries cannot read and understand a simple text by age 10, trapping them in a cycle of poverty and stripping them of the chance at higher education. As a result, 62% of the world’s eligible population is unable to access college, reinforcing global inequality and economic disparity.</p>
+        <p>This must change. And change starts with us.</p>
+        <p>My name is Anastasia Leandra Paul and my mission is to spotlight educational inequality and inspire conversations and actions to bridge the worldwide opportunity gap for students. Through thought-provoking podcasts, curated articles, and a growing community of passionate individuals, we aim to empower teenagers to become agents of change. Together, we can raise awareness, spark dialogue, and explore impactful ways to make education equitable for all.</p>
+      </div>
+      <button onclick="document.getElementById('moreText').style.display='block'; this.style.display='none';" style="margin-top: 1rem; background-color: #003366; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer;">Read more ...</button>
     </div>
-  </section>
-
-  <!-- Section Suggestions -->
-  <section id="resources">
-    (INHALT WIRD HIER EINGEFÜGT – bereits im Canvas vorhanden)
-  </section>
-
-  <!-- Background Illustration Suggestions (example placeholders) -->
-  <section style="margin-top: 3rem;">
-    <h2>Visual Inspiration</h2>
-    <p>Here are some suggested illustrations to visually support the theme of educational inequality:</p>
-    <ul>
-      <li><img src="https://images.unsplash.com/photo-1577896851231-70ef18881754" alt="Children in rural classroom" style="width:300px;"> – Rural education environment</li>
-      <li><img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe" alt="Contrast of rich and poor schools" style="width:300px;"> – Symbolic contrast of school conditions</li>
-      <li><img src="https://images.unsplash.com/photo-1531219432768-e0f134d6dd2b" alt="Global access to learning" style="width:300px;"> – Kids learning with tablets worldwide</li>
-    </ul>
   </section>
 </body>
 </html>
