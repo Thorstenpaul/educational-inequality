@@ -44,9 +44,36 @@
       margin-bottom: 1rem;
     }
   </style>
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('[lang]').forEach(el => {
+        el.style.display = (el.getAttribute('lang') === lang) ? 'block' : 'none';
+      });
+    }
+    window.onload = () => switchLanguage('en');
+  </script>
 </head>
 <body>
-  <h1>Educational Inequality – Anastasia Paul</h1>
-  <p>This is a minimal test to ensure visibility.</p>
+  <header style="background-color: #003366; padding: 1rem; color: white;">
+    <nav style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="font-size: 1.5rem; font-weight: bold;">Anastasia Paul</div>
+      <ul style="list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0;">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#resources">Articles</a></li>
+        <li><a href="#podcast">Podcast</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#involve">Get Involved</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <h1>Educational Inequality – Anastasia Paul</h1>
+      <p>This isn’t just another website that simply informs you about the ongoing issue of educational inequality. This platform exists to prove that one voice, one that might seem small, insignificant, unheard, can, in fact, create an impact.</p>
+      <p>My team and I are dedicated to ensuring that people, regardless of their socioeconomic status, nationality, or age, are aware of the pressing issue of educational inequality, an issue that, by now, should have been long resolved.</p>
+      <p>When you meet someone for the first time, one of the most common questions is: Where do you come from? For me, this has never been an easy question to answer. My mother is from Ukraine, raised in a small village near the Russian border in Sumskaya Oblast, Ulyanovka. My father was born and raised in Eastern Germany. My brother and I were born in Vienna, attended the American International School, and today, I live in Andover, Massachusetts, while my brother resides in Shanghai, China.</p>
+      <p>I am a three-year junior at Phillips Academy Andover, but my interest in educational inequity began at a very young age.</p>
+    </section>
+  </main>
 </body>
 </html>
