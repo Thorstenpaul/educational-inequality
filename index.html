@@ -9,7 +9,10 @@
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      background-color: #fdf9f4;
+      background-image: url('images/classroom-background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       color: #2a2a2a;
     }
     h1, h2 {
@@ -61,6 +64,9 @@
     .subsection {
       display: none;
       margin-top: 2rem;
+      background: rgba(255,255,255,0.85);
+      padding: 1rem;
+      border-radius: 6px;
     }
     .subsection.active {
       display: block;
@@ -91,7 +97,6 @@
   <main>
     <section id="home" class="subsection active">
       <div class="content-container">
-        <img src="images/anastasia.jpg" alt="Anastasia Paul" class="photo" />
         <div class="intro">
           <h1>Educational Inequality – Anastasia Paul</h1>
           <p>This isn’t just another website that simply informs you about the ongoing issue of educational inequality. This platform exists to prove that one voice, one that might seem small, insignificant, unheard, can, in fact, create an impact.</p>
