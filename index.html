@@ -44,87 +44,31 @@
     section {
       margin: 3rem 2rem;
     }
-    img {
-      max-width: 100%;
+    .subsection {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 1.5rem;
       border-radius: 8px;
     }
-    .photo {
-      width: 120px;
-      border-radius: 50%;
-    }
-    .content-container {
-      display: flex;
-      gap: 2rem;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
-    .intro p {
-      margin-bottom: 1rem;
-    }
-    .subsection {
-      display: none;
-      margin-top: 2rem;
-      background: rgba(255,255,255,0.85);
-      padding: 1rem;
-      border-radius: 6px;
-    }
-    .subsection.active {
-      display: block;
-    }
   </style>
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('.subsection').forEach(sec => sec.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
-    window.onload = () => showSection('home');
-  </script>
 </head>
 <body>
   <header>
     <nav>
       <div style="font-size: 1.5rem; font-weight: bold;">Anastasia Paul</div>
       <ul>
-        <li><a onclick="showSection('home')">Home</a></li>
-        <li><a onclick="showSection('articles')">Articles</a></li>
-        <li><a onclick="showSection('podcast')">Podcast</a></li>
-        <li><a onclick="showSection('projects')">Projects</a></li>
-        <li><a onclick="showSection('involve')">Get Involved</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Podcast</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Get Involved</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="subsection active">
-      <div class="content-container">
-        <div class="intro">
-          <h1>Educational Inequality – Anastasia Paul</h1>
-          <p>This isn’t just another website that simply informs you about the ongoing issue of educational inequality. This platform exists to prove that one voice, one that might seem small, insignificant, unheard, can, in fact, create an impact.</p>
-          <p>My team and I are dedicated to ensuring that people, regardless of their socioeconomic status, nationality, or age, are aware of the pressing issue of educational inequality, an issue that, by now, should have been long resolved.</p>
-          <p>When you meet someone for the first time, one of the most common questions is: Where do you come from? For me, this has never been an easy question to answer. My mother is from Ukraine, raised in a small village near the Russian border in Sumskaya Oblast, Ulyanovka. My father was born and raised in Eastern Germany. My brother and I were born in Vienna, attended the American International School, and today, I live in Andover, Massachusetts, while my brother resides in Shanghai, China.</p>
-          <p>I am a three-year junior at Phillips Academy Andover, but my interest in educational inequity began at a very young age.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="articles" class="subsection">
-      <h2>Articles & Research</h2>
-      <p>This section will showcase curated academic articles and research studies.</p>
-    </section>
-
-    <section id="podcast" class="subsection">
-      <h2>Podcast with Opinion Leaders</h2>
-      <p>Coming soon: Conversations with educators, activists, and youth leaders.</p>
-    </section>
-
-    <section id="projects" class="subsection">
-      <h2>Own Projects</h2>
-      <p>Explore initiatives and campaigns by Anastasia and her team.</p>
-    </section>
-
-    <section id="involve" class="subsection">
-      <h2>Get Involved</h2>
-      <p>Join our community of changemakers, volunteers, and educators.</p>
+    <section class="subsection">
+      <h1>Educational Inequality – Anastasia Paul</h1>
+      <p>This isn’t just another website that simply informs you about the ongoing issue of educational inequality. This platform exists to prove that one voice, one that might seem small, insignificant, unheard, can, in fact, create an impact.</p>
     </section>
   </main>
 </body>
