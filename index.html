@@ -1,79 +1,120 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Educational Inequality – Anastasia Paul</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Anastasia Paul – Educational Inequality</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #fdf9f4;
-      color: #2a2a2a;
+      font-family: 'Inter', sans-serif;
+      background-color: #fcf7f1;
+      color: #1d1d1f;
     }
     header {
-      background-color: #003366;
-      color: white;
-      padding: 1rem;
+      background-color: #fff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
     }
     nav {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      margin: 0;
-      padding: 0;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
     }
     nav a {
-      color: white;
       text-decoration: none;
+      color: #2d2dff;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
-    .hero {
-      background-image: url('background.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 4rem 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    nav a:hover {
+      color: #1a1ad6;
     }
-    .hero-content {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 2rem;
-      border-radius: 8px;
+    main {
       max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
     }
-    h1 {
-      color: #283845;
+    .intro {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .intro img {
+      width: 160px;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    #more-text {
+      display: none;
+      margin-top: 1rem;
+    }
+    button {
+      background-color: #2d2dff;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #1a1ad6;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #555;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
+    <h1>Anastasia Paul – Educational Inequality</h1>
+    <p>with Anastasia Leandra Paul</p>
     <nav>
-      <div style="font-size: 1.5rem; font-weight: bold;">Anastasia Paul</div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Articles</a></li>
-        <li><a href="#">Podcast</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Get Involved</a></li>
-      </ul>
+      <a href="articles.html">Articles & Research</a>
+      <a href="podcasts.html">Podcasts</a>
+      <a href="projects.html">Projects</a>
+      <a href="get-involved.html">Get Involved</a>
     </nav>
   </header>
-
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Educational Inequality – Anastasia Paul</h1>
-      <p>This isn’t just another website that simply informs you about the ongoing issue of educational inequality. This platform exists to prove that one voice, one that might seem small, insignificant, unheard, can, in fact, create an impact.</p>
+  <main>
+    <div class="intro">
+      <img src="anastasia.jpeg" alt="Portrait of Anastasia Paul">
+      This isn’t just another website that simply informs you about the ongoing issue of educational inequality. This platform exists to prove that one voice, one that might seem small, insignificant, unheard, can, in fact, create an impact.
+      <div id="more-text">
+        <p>My team and I are dedicated to ensuring that people, regardless of their socioeconomic status, nationality, or age, are aware of the pressing issue of educational inequality, an issue that, by now, should have been long resolved.</p>
+        <p>[...]</p>
+        <p>My name is Anastasia Leandra Paul and my mission is to spotlight educational inequality and inspire conversations and actions to bridge the worldwide opportunity gap for students. Through thought-provoking podcasts, curated articles, and a growing community of passionate individuals, we aim to empower teenagers to become agents of change. Together, we can raise awareness, spark dialogue, and explore impactful ways to make education equitable for all.</p>
+      </div>
     </div>
-  </section>
+    <button onclick="toggleText()">Read Further</button>
+  </main>
+  <footer>
+    &copy; 2025 Educational Inequality – Anastasia Paul. All rights reserved.
+  </footer>
+  <script>
+    function toggleText() {
+      const moreText = document.getElementById("more-text");
+      const button = document.querySelector("button");
+      if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        button.textContent = "Show Less";
+      } else {
+        moreText.style.display = "none";
+        button.textContent = "Read Further";
+      }
+    }
+  </script>
 </body>
 </html>
