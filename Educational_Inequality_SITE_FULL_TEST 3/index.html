@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Inequality – Anastasia Paul</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { text-align: center; padding: 2rem; background: #f4f4f4; }
+    nav a { margin: 0 1rem; text-decoration: none; color: #2d2d2d; font-weight: bold; }
+    main { max-width: 1000px; margin: 2rem auto; padding: 1rem; }
+    .intro-section { display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; }
+    .intro-section img { width: 100%; max-width: 350px; border-radius: 10px; }
+    .intro-text { flex: 2; min-width: 300px; max-height: none; overflow: visible; position: relative; }
+    .extra-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
+    .intro-text.expanded .extra-content {
+      max-height: 1000px;
+    }
+    .intro-text button {
+      margin-top: 10px;
+      display: block;
+    }
+    .expanded-text { margin-top: 1rem; }
+    .podcast-card {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-top: 3rem;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+    .podcast-card img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 8px;
+    }
+    .podcast-card .placeholder {
+      width: 100%;
+      max-width: 200px;
+      height: 200px;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      color: #888;
+    }
+  </style>
+  <script>
+    function toggleIntro() {
+      const wrapper = document.querySelector(".intro-text");
+      const ext = document.getElementById("extraIntro");
+      const btn = document.getElementById("toggleBtn");
+      wrapper.classList.toggle("expanded");
+      if (wrapper.classList.contains("expanded")) {
+        btn.innerText = "Show less";
+      } else {
+        btn.innerText = "Read more";
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Anastasia Paul – Educational Inequality</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="articles.html">Articles & Research</a>
+      <a href="podcasts.html">Podcasts</a>
+      <a href="projects.html">Projects</a>
+      <a href="get-involved.html">Get Involved</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro-section">
+      <div><img src="Neueste Fotos anzeigen.jpeg" alt="Anastasia"></div>
+      <div class="intro-text">
+        <p>This isn’t just another website that simply informs you about the ongoing issue of educational inequality. This platform exists to prove that one voice, one that might seem small, insignificant, unheard, can, in fact, create an impact.</p>
+        <div id="extraIntro" class="extra-content">
+          <div class="expanded-text">
+            <p>My team and I are dedicated to ensuring that people, regardless of their socioeconomic status, nationality, or age, are aware of the pressing issue of educational inequality...</p>
+            <p>My name is Anastasia Leandra Paul and my mission is to spotlight educational inequality and inspire conversations and actions to bridge the worldwide opportunity gap for students.</p>
+          </div>
+        </div>
+        <button id="toggleBtn" onclick="toggleIntro()">Read more</button>
+      </div>
+    </section>
+
+    <section class="podcast-card">
+      <div style="flex: 1;">
+        <img src="IMG_9996.jpg" alt="Severin Broucek">
+      </div>
+      <div style="flex: 3;">
+        <h3>April 2025 – Severin Broucek</h3>
+        <p><strong>Short bio:</strong> Severin Broucek is a passionate advocate for education as the most powerful tool to combat poverty and inequality. As a leader in Teach for Austria, he emphasizes the vital role of teachers as agents of change and highlights the need for international cooperation to overcome structural challenges in education.</p>
+        <ul>
+          <li>In your view, what are the biggest obstacles in the Austrian education system that prevent equal opportunities?</li>
+          <li>How can teachers be specifically empowered to have a greater impact on educational equity?</li>
+          <li>What concrete changes do you think should be made in the Austrian school system to better meet the needs of socially disadvantaged students?</li>
+          <li>Which innovative approaches from other countries could be implemented in Austria to promote educational equity?</li>
+          <li>How can we ensure all students, regardless of background, receive a high-quality education?</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="podcast-card">
+      <div style="flex: 1;">
+        <div class="placeholder">Ines Fratzl</div>
+      </div>
+      <div style="flex: 3;">
+        <h3>May 2025 – Ines Fratzl</h3>
+        <p><strong>Short bio:</strong> Dr. Ines Fratzl is an educational researcher and author of the book <em>"Educational Inequality in the Austrian Education System."</em> Her work analyzes systemic barriers that hinder disadvantaged students and explores reform strategies aimed at improving educational equity in Austria.</p>
+        <ul>
+          <li>What structural inequalities exist in the Austrian education system, and how do they affect disadvantaged groups?</li>
+          <li>What role does social background play in determining educational success in Austria?</li>
+          <li>What reforms would you propose to address educational inequality in Austria?</li>
+          <li>How can the Austrian education system become more inclusive to ensure equal opportunities for all students?</li>
+          <li>What actions can teachers and schools take to fight educational inequality in their daily work?</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Educational Inequality – Anastasia Paul. All rights reserved.
+  </footer>
+</body>
+</html>
