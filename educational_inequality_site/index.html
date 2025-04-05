@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Educational Inequality</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Educational Inequality</h1>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects & Initiatives</a></li>
+        <li><a href="#podcasts">Podcasts</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="image-card">
+        <img src="assets/images/anastasia.jpg" alt="Anastasia">
+      </div>
+      <div class="text">
+        <p>This isn’t just another website that simply informs you about the ongoing issue of educational inequality...</p>
+        <button onclick="toggleText()">Read more</button>
+        <div id="more-text" style="display:none;">
+          <p>[Full introduction continues here...]</p>
+        </div>
+      </div>
+    </section>
+    <!-- Additional sections for Projects, Podcasts, Resources and Contact would be added here -->
+  </main>
+  <footer>
+    <p>© 2025 Educational Inequality by Anastasia Leandra Paul</p>
+  </footer>
+  <script>
+    function toggleText() {
+      var x = document.getElementById("more-text");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
