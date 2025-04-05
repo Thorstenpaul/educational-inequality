@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educational Inequality – Anastasia Paul</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #F3F4F6;
+      color: #111827;
+      max-width: 1200px;
+      margin: auto;
+    }
+    header {
+      background-color: #2E3A59;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .intro-section {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: white;
+      padding: 40px;
+    }
+    .intro-section img {
+      width: auto;
+      height: 2in;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .intro-text {
+      flex: 1;
+      padding-left: 40px;
+      max-height: 2in;
+      overflow: hidden;
+      position: relative;
+    }
+    .intro-text.expanded {
+      max-height: none;
+    }
+    .read-more-button, .back-button {
+      background-color: #2E3A59;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      margin-top: 20px;
+      margin-right: 10px;
+      transition: background-color 0.3s;
+    }
+    .read-more-button:hover, .back-button:hover {
+      background-color: #F9A826;
+    }
+    footer {
+      background-color: #2E3A59;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .card {
+      background-color: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card img {
+      border-radius: 16px;
+      max-width: 300px;
+      height: auto;
+      margin-right: 20px;
+    }
+    .card-content {
+      flex: 1;
+    }
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    section {
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Inhalt wird hier ergänzt durch JavaScript -->
+  <script>
+    function toggleIntro() {
+      const intro = document.getElementById('introText');
+      intro.classList.toggle('expanded');
+    }
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
