@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educational Inequality – Anastasia Paul</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2E3A59;
+      --secondary: #F3F4F6;
+      --highlight: #F9A826;
+      --accent: #E63946;
+      --text-dark: #111827;
+      --text-light: #ffffff;
+      --max-width: 1200px;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--secondary);
+      color: var(--text-dark);
+    }
+    header {
+      background-color: var(--primary);
+      color: var(--text-light);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--text-light);
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 2rem;
+    }
+    .intro img {
+      border-radius: 16px;
+      width: 200px;
+      height: auto;
+      margin-right: 2rem;
+    }
+    .intro-text {
+      flex: 1;
+    }
+    .more-text {
+      display: none;
+    }
+    .show .more-text {
+      display: block;
+    }
+    button.read-more {
+      background-color: var(--primary);
+      color: var(--text-light);
+      border: none;
+      border-radius: 9999px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+    button.read-more:hover {
+      background-color: var(--highlight);
+    }
+    section {
+      margin-top: 3rem;
+    }
+    footer {
+      background-color: var(--primary);
+      color: var(--text-light);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+    img.card-img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><strong>Educational Inequality</strong></div>
+    <nav>
+      <a href="#projects">Projects & Initiatives</a>
+      <a href="#podcasts">Podcasts</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="intro">
+      <img src="Anastasia1.jpg" alt="Anastasia" />
+      <div class="intro-text">
+        <p>This isn’t just another website that simply informs you about the ongoing issue of educational inequality. This platform exists to prove that one voice, one that might seem small, insignificant, unheard, can, in fact, create an impact.</p>
+        <div class="more-text">
+          <p>My team and I are dedicated to ensuring that people, regardless of their socioeconomic status, nationality, or age [...] Together, we can raise awareness, spark dialogue, and explore impactful ways to make education equitable for all.</p>
+        </div>
+        <button class="read-more" onclick="this.parentElement.classList.toggle('show')">Read more</button>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects & Initiatives</h2>
+      <p><strong>Peer Tutoring in German and Russian (2022–2023):</strong> Supported students at Phillips Academy Andover with grammar, vocabulary, and cultural context. <em>[Bild: PA Platzhalter]</em></p>
+      <p><strong>English Tutoring for Ukrainian Students (May–Sept 2024):</strong> Helped integrate Ukrainian students into Austrian schools. <em>[Bild: ukrainisches Kind]</em></p>
+      <p><strong>Student Exchange in Montenegro (June–July 2024):</strong> Collaboration with NGO "Nasa Akcia" in Kotor. <img class="card-img" src="nasha akzia1.jpg" alt="Montenegro Exchange"></p>
+      <p><strong>Charity Event at the Vienna Children's Reading Festival (June 2025):</strong> Raising funds for Teach For Austria. <img class="card-img" src="kinderlesefest.jpg" alt="Lesefest"></p>
+      <p><strong>Internship with Teach For Austria (July–Aug 2025):</strong> Experience Austrian educational system from within.</p>
+    </section>
+
+    <section id="podcasts">
+      <h2>Podcasts – Conversations that matter</h2>
+      <div style="display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2rem;">
+        <img class="card-img" src="Broucek1.jpg" alt="Severin Broucek" style="max-width: 250px;" />
+        <div>
+          <p><strong>Podcast April 2025 – Severin Broucek:</strong> CEO of Teach For Austria shares insights into Austria’s education system.</p>
+          <p><em>placeholder audiostream</em></p>
+        </div>
+      </div>
+      <div style="display: flex; gap: 2rem; align-items: flex-start;">
+        <img class="card-img" src="platzhalter_irene_fratzl.jpg" alt="Ines Fratzl" style="max-width: 250px;" />
+        <div>
+          <p><strong>Podcast May 2025 – Ines Fratzl:</strong> Educational psychologist and author speaks on educational justice.</p>
+          <p><em>placeholder audiostream</em></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2>Resources, Articles and Research</h2>
+      <p>[Artikeltabelle wird hier dargestellt]</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact & Get involved</h2>
+      <form>
+        <label>Name:<br><input type="text" name="name" /></label><br><br>
+        <label>Email:<br><input type="email" name="email" /></label><br><br>
+        <label>Message:<br><textarea name="message" rows="5"></textarea></label><br><br>
+        <button type="submit" class="read-more">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Educational Inequality by Anastasia Leandra Paul</p>
+  </footer>
+</body>
+</html>
